@@ -12,7 +12,7 @@ const SocialLink = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/mmusharraf",
+      href: "https://www.linkedin.com/in/ahamed-minhaj-24697a215/",
       style: "rounded-tr-md",
     },
     {
@@ -22,7 +22,7 @@ const SocialLink = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com/mhdmusharraf",
+      href: "https://github.com/ahamedminhaj456",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const SocialLink = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:mhdmusharraf.edu@gmail.com",
+      href: "mailto:ahamedminhaj456@gmail.com",
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ const SocialLink = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/MusharrafCV.pdf",
+      href: "/Ahamed_Minhaj_Software.pdf",
       style: "rounded-br-md",
       download: true,
     },

@@ -16,14 +16,18 @@ const NavBar = () => {
     },
     {
       id: 3,
-      link: "portfolio",
-    },
-    {
-      id: 4,
       link: "experience",
     },
     {
+      id: 4,
+      link: "projects",
+    },
+    {
       id: 5,
+      link: "Technologies",
+    },
+    {
+      id: 6,
       link: "contact",
     },
   ];
@@ -31,7 +35,8 @@ const NavBar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
       <div>
-        <h1 className="text-5xl font-signature ml-2">Mohammed Musharraf</h1>
+      <h1 className="text-5xl font-signature ml-2" style={{  fontFamily: "'Homemade Apple', cursive" }}>Ahamed Minhaj</h1>
+
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => {

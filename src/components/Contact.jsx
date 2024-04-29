@@ -5,7 +5,7 @@ const Contact = () => {
    
     <div
       name="contact"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 via-black to-gray-800 p-4 text-white mt-20"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-white-100 via-black to-gray-800 p-4 text-white mt-20"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full w-full">
         <div className="pb-8">
@@ -13,14 +13,14 @@ const Contact = () => {
             Contact
           </p>
           <p className="py-6">
-            I'm currently seeking new opportunities to collaborate on exciting
-            projects. Whether you have a project idea in mind or just want to
+            I'm currently seeking new internship opportunities to collaborate on exciting
+            projects. Whether you have a internship idea in mind or just want to
             say hi, feel free to <b>contact me!</b>
           </p>
         </div>
         <div className="flex justify-center items-center">
           <form
-            action="https://getform.io/f/Xe01qVax"
+            action="https://getform.io/f/jbwxrkwa"
             method="POST"
             className="flex flex-col w-full md:w-1/2"
           >
