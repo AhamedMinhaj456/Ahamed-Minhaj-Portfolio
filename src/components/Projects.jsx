@@ -1,87 +1,108 @@
 import React, { useState } from "react";
-import trainTransport from "../assets/portfolio/Train-transportation.png";
-import studentRegistration from "../assets/portfolio/student-registration.png";
-import ticTacToe from "../assets/portfolio/tic-tac-toe.png";
-import bmiCurrency from "../assets/portfolio/BMI.png";
-import responsiveWeb from "../assets/portfolio/responsive.png";
-import ticketApp from "../assets/portfolio/ticket.png";
+import MotorbikeReservation from "../assets/Projects/Motorbike1.png";
+import MotorbikeRenting from "../assets/Projects/Motorbike.png";
+import mobile from "../assets/Projects/mobile.jpeg";
+import medicalCost from "../assets/Projects/medicalCost.png";
+import flowerHeader from "../assets/Projects/flowerheader.jpg";
+import GUIgroup from "../assets/Projects/GUIgroup.png";
+import GUIindividual from "../assets/Projects/GUIindividual.png";
 
 import { FaTimes } from "react-icons/fa";
-import trainProject from "../assets/demos/Train_project.mp4";
-import wpfProject from "../assets/demos/WPF_project.mp4";
-import ticTacToeProject from "../assets/demos/tic-tac-toe.mp4";
-import bmiCurrencyProject from "../assets/demos/BMI-Currency.mp4";
-import responsiveWebProject from "../assets/demos/Responsive.mp4";
-import ticketAppProject from "../assets/demos/Ticketing-App.mp4";
 
 
 const Projects = () => {
-  const [selectedPortfolio, setSelectedPortfolio] = useState(null);
+  const [selectedProjects1, setSelectedProjects1] = useState(null);
+  const [selectedProjects2, setSelectedProjects2] = useState(null);
+  const [selectedProjects3, setSelectedProjects3] = useState(null);
+  const [selectedProjects4, setSelectedProjects4] = useState(null);
 
-  const portfolios = [
+  const WebProjects = [
     {
       id: 1,
-      src: trainTransport,
-      description: "Using C++ and leveraging array data structures, I developed a sophisticated solution aimed at optimizing delivery logistics. This project significantly reduces time, resource, and effort expenditure by efficiently calculating delivery charges and profits within specified time frames.",
-      demoVideo: trainProject,
-      code: "https://github.com/mhdmusharraf/Delivery-Charge-Calculator-For-Railway-Stations.git"
+      src: MotorbikeReservation,
+      description: "An ongoing Motorbike reservation system project developed by a group of four members. I am responsible for backend. It focus on Web Application for a motorbike reservation system facilitates bookings across multiple shops. It allows shops to register and offer their services. The system includes three user roles: admin (website owner), shop owner, and customer. Admin manages the overall platform, shop owners control their respective shops, and customers can make reservations through the app or website. The mobile Application for customers, it provide real-time update about customer’s ongoing services. Technologies : React.js , Spring-boot, MySQL, Flutter and Firebase",
+      code: "https://github.com/AhamedMinhaj456/Motorbike_Service_Station_Reservation_System.git"
     },
     {
       id: 2,
-      src: studentRegistration,
-      description: "Employing WPF for the frontend and C# for the backend, I developed a comprehensive solution to facilitate seamless registration processes. This project marks my entry into practical software development, showcasing my proficiency in both frontend and backend technologies.",
-      demoVideo: wpfProject,
-      code: "https://github.com/mhdmusharraf/Student_Registration_System_4080.git"
+      src: MotorbikeRenting,
+      description: "Fourth Semester Web Application project Using MERN stack, It developed for a shop, where motorbikes are renting and selling. This Projects mainly focused on CRUD applications using MERN stack",
+      code: "https://github.com/AhamedMinhaj456/Motorbike-Renting-and-Selling-System.git"
+    },
+    
+    
+  ];
+  const MLProjects = [
+    {
+      id: 1,
+      src: flowerHeader,
+      description: "A ongoing group project in sixth semester Artificail Intelligence(AI-Deep Learning)  module.  This End to End application reconise when inserting photo of flower or capturing a flower using camera. this project devoloping by using RNN and react.js for frondend.",
+      code: "https://github.com/AhamedMinhaj456/Flower-recognition-system.git"
+    },
+    
+    {
+      id: 2,
+      src: medicalCost,
+      description: "A group project in fifth semester Machine Learning module.  This system predict the medical cost of the person when inserting the features of age, Sex, BMI, children, smokers and region. It developed using Linear  Regression and Decision trees algorithms.",
+      code: "https://github.com/AhamedMinhaj456/Personal_medical_Cost_prediction_ML_Project.git"
+    },
+    
+  ];
+  const MobileProjects = [
+    {
+      id: 1,
+      src: mobile,
+      description: "A taxi booking app enables users to easily request and schedule rides from their smartphones. Features typically include GPS tracking, fare estimation, driver ratings. As a part of its user interface, it often includes profiles for customers, as well as a history of past rides. Technologies : Flutter, Firebase",
+      code: "https://github.com/AhamedMinhaj456/Taxi_Booking-App_Flutter.git"
+    },
+    
+  ];
+  const GUIProjects = [
+    {
+      id: 1,
+      src: GUIgroup,
+      description: "A group project in third semester GUI Programming module. Developed a patient registration system for hospital using C#, XAML, WPF and MVVM architecture, integrated with SQLite for efficient data management. Implemented features for administrators, doctors, nurses and pharmasist to manage patient registration, medicine management, write description, and supply medicines securely.",
+      code: "https://github.com/AhamedMinhaj456/GUI-Programming.git"
     },
     {
-      id: 3,
-      src: ticTacToe,
-      description: "This project is a Python implementation of a Tic-Tac-Toe game utilizing a backtracking algorithm. It features both single-player and multiplayer modes, allowing players to compete against each other or against an AI opponent. The game's logic includes displaying the current state of the board, checking for win or draw conditions, and enabling players to take turns making moves.",
-      demoVideo: ticTacToeProject,
-      code: "https://github.com/mhdmusharraf/AI-Projects.git"
+      id: 2,
+      src: GUIindividual,
+      description: "A third semester GUI Programming module project. Developed a student registration system for a school using C#, XAML, WPF and MVVM architecture. Implemented features for administrators, teachers and students to manage enrollment, grading and save students personal information securely.",
+      code: "https://github.com/AhamedMinhaj456/Individual-project.git"
     },
-    {
-      id: 4,
-      src: bmiCurrency,
-      description: "This project utilizes React with Vite for efficient development and a seamless user experience. It incorporates an online API for currency conversion, enabling users to effortlessly convert between currencies. The combination of React Vite and the online API ensures a smooth and responsive BMI calculator and currency converter, enhancing usability and functionality.",
-      demoVideo: bmiCurrencyProject,
-      code: "https://github.com/mhdmusharraf/small-react-projects.git"
-    },
-    {
-      id: 5,
-      src: responsiveWeb,
-      description: "Explore the art of responsive web design using just HTML and CSS! This repository showcases the elegance of crafting adaptable, device-friendly layouts without complex frameworks. Dive in to discover techniques for creating visually stunning websites that seamlessly adjust to different screens.",
-      demoVideo: responsiveWebProject,
-      code: "https://github.com/mhdmusharraf/Responsive-Web-Design.git"
-    },
-    {
-      id: 6,
-      src: ticketApp,
-      description: " This Ticketing app combines Next.js for fast rendering, Tailwind CSS for quick styling, and MongoDB for scalable data storage. This tech stack delivers a seamless user experience with faster loading times, customizable UI design, and efficient ticketing operations.",
-
-
-
-
-
-      
-      demoVideo: ticketAppProject,
-      code: "https://github.com/mhdmusharraf/Ticketing-App.git"
-    },
+    
   ];
 
-  const handleClick = (id) => {
-    setSelectedPortfolio(selectedPortfolio === id ? null : id);
+  const handleClick1 = (id) => {
+    setSelectedProjects1(selectedProjects1 === id ? null : id);
   };
 
-  const handleClose = () => {
-    setSelectedPortfolio(null);
+  const handleClick2 = (id) => {
+    setSelectedProjects2(selectedProjects2 === id ? null : id);
   };
 
-  const handleDemoClick = (demoVideo) => {
-    if (demoVideo) {
-      window.open(demoVideo, "_blank");
-    }
+  const handleClick3 = (id) => {
+    setSelectedProjects3(selectedProjects3 === id ? null : id);
   };
+
+  const handleClick4 = (id) => {
+    setSelectedProjects4(selectedProjects4 === id ? null : id);
+  };
+
+  const handleClose1 = () => {
+    setSelectedProjects1(null);
+  };
+  const handleClose2 = () => {
+    setSelectedProjects2(null);
+  };
+  const handleClose3 = () => {
+    setSelectedProjects3(null);
+  };
+  const handleClose4 = () => {
+    setSelectedProjects4(null);
+  };
+
+  
 
   const handleCodeClick = (code) => {
     if (code) {
@@ -92,58 +113,210 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="bg-gradient-to-b from-gray-800 to-white-100 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-gray-800 to-white-100 w-full text-white "
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
           </p>
-          <p className="py-6">Projects I have worked on</p>
+         </div>
+       
+         <div >
+        <div className="pb-8">
+         <p className="py-6">Web Development</p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map((portfolio) => {
+        
+        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {WebProjects.map((Projects) => {
             return (
               <div
-                key={portfolio.id}
+                key={Projects.id}
                 className="shadow-md shadow-gray-600 rounded-lg"
               >
-                <div
-                  className="rounded-md duration-200 hover:scale-105 cursor-pointer"
-                  onClick={() => handleClick(portfolio.id)}
+                <div 
+                  className=" rounded-md duration-200 hover:scale-105 cursor-pointer"
+                  onClick={() => handleClick1(Projects.id)}
                 >
-                  {selectedPortfolio === portfolio.id ? (
+                  {selectedProjects1 === Projects.id ? (
                     <div className="w-full h-full bg-gray-800 bg-opacity-90 p-4 flex flex-col items-center justify-center">
                       <button
                         className="absolute top-2 right-2 text-white"
-                        onClick={handleClose}
+                        onClick={handleClose1}
                       >
                         <FaTimes />
                       </button>
-                      <p className="text-white">{portfolio.description}</p>
+                      <p className="text-white">{Projects.description}</p>
                     </div>
                   ) : (
-                    <img src={portfolio.src} alt="" className="rounded-md" />
+                    <img src={Projects.src} alt="" className="rounded-md" />
                   )}
                 </div>
+                               
                 <div className="flex items-center justify-center">
-                  <button
+                 <button
                     className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                    onClick={() => handleDemoClick(portfolio.demoVideo)}
+                    onClick={() => handleCodeClick(Projects.code)}
                   >
-                    Demo
+                    Github
                   </button>
-                  <button
-                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                    onClick={() => handleCodeClick(portfolio.code)}
-                  >
-                    Code
-                  </button>
-                </div>
+                  
+                </div >
+               
               </div>
             );
           })}
         </div>
+        </div>
+        
+
+        <div >
+        <div className="pb-8">
+         <p className="py-6">Machine Learning</p>
+        </div>
+        
+        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {MLProjects.map((Projects) => {
+            return (
+              <div
+                key={Projects.id}
+                className="shadow-md shadow-gray-600 rounded-lg"
+              >
+                <div 
+                  className=" rounded-md duration-200 hover:scale-105 cursor-pointer"
+                  onClick={() => handleClick2(Projects.id)}
+                >
+                  {selectedProjects2 === Projects.id ? (
+                    <div className="w-full h-full bg-gray-800 bg-opacity-90 p-4 flex flex-col items-center justify-center">
+                      <button
+                        className="absolute top-2 right-2 text-white"
+                        onClick={handleClose2}
+                      >
+                        <FaTimes />
+                      </button>
+                      <p className="text-white">{Projects.description}</p>
+                    </div>
+                  ) : (
+                    <img src={Projects.src} alt="" className="rounded-md" />
+                  )}
+                </div>
+                
+
+               
+                <div className="flex items-center justify-center">
+                 <button
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                    onClick={() => handleCodeClick(Projects.code)}
+                  >
+                    Github
+                  </button>
+                  
+                </div >
+               
+              </div>
+            );
+          })}
+        </div>
+        </div>
+
+        <div >
+        <div className="pb-8">
+         <h3 className="py-6">Mobile Application</h3>
+        </div>
+        
+        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {MobileProjects.map((Projects) => {
+            return (
+              <div
+                key={Projects.id}
+                className="shadow-md shadow-gray-600 rounded-lg"
+              >
+                <div 
+                  className=" rounded-md duration-200 hover:scale-105 cursor-pointer"
+                  onClick={() => handleClick3(Projects.id)}
+                >
+                  {selectedProjects3 === Projects.id ? (
+                    <div className="w-full h-full bg-gray-800 bg-opacity-90 p-4 flex flex-col items-center justify-center">
+                      <button
+                        className="absolute top-2 right-2 text-white"
+                        onClick={handleClose3}
+                      >
+                        <FaTimes />
+                      </button>
+                      <p className="text-white">{Projects.description}</p>
+                    </div>
+                  ) : (
+                    <img src={Projects.src} alt="" className="rounded-md" />
+                  )}
+                </div>
+                
+
+               
+                <div className="flex items-center justify-center">
+                 <button
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                    onClick={() => handleCodeClick(Projects.code)}
+                  >
+                    Github
+                  </button>
+                  
+                </div >
+               
+              </div>
+            );
+          })}
+        </div>
+        </div>
+        
+        <div >
+        <div className="pb-8">
+         <h3 className="py-6">GUI Programming</h3>
+        </div>
+        
+        <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {GUIProjects.map((Projects) => {
+            return (
+              <div
+                key={Projects.id}
+                className="shadow-md shadow-gray-600 rounded-lg"
+              >
+                <div 
+                  className=" rounded-md duration-200 hover:scale-105 cursor-pointer"
+                  onClick={() => handleClick4(Projects.id)}
+                >
+                  {selectedProjects4 === Projects.id ? (
+                    <div className="w-full h-full bg-gray-800 bg-opacity-90 p-4 flex flex-col items-center justify-center">
+                      <button
+                        className="absolute top-2 right-2 text-white"
+                        onClick={handleClose4}
+                      >
+                        <FaTimes />
+                      </button>
+                      <p className="text-white">{Projects.description}</p>
+                    </div>
+                  ) : (
+                    <img src={Projects.src} alt="" className="rounded-md" />
+                  )}
+                </div>
+                
+
+               
+                <div className="flex items-center justify-center">
+                 <button
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                    onClick={() => handleCodeClick(Projects.code)}
+                  >
+                    Github
+                  </button>
+                  
+                </div >
+               
+              </div>
+            );
+          })}
+        </div>
+        </div>
+
       </div>
     </div>
   );
