@@ -76,7 +76,7 @@ const Home = () => {
 
               {/* Optional: update hrefs */}
               <a
-                href="/Minhaj_CV.pdf"
+                href= "/Ahamed_Minhaj.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-lg ring-1 ring-white/15 bg-white/5 hover:bg-white/10 transition"
@@ -86,7 +86,7 @@ const Home = () => {
 
               <div className="flex items-center gap-3 ml-1">
                 <a
-                  href="https://github.com/your-username"
+                   href= "https://github.com/ahamedminhaj456"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition"
@@ -96,7 +96,7 @@ const Home = () => {
                   <FaGithub className="text-xl" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/your-username"
+                  href= "https://www.linkedin.com/in/ahamed-minhaj-24697a215/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition"
