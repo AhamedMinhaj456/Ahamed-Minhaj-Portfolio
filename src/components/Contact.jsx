@@ -13,8 +13,8 @@ const Contact = () => {
             Contact
           </p>
           <p className="py-6">
-            I'm currently seeking new internship opportunities to collaborate on exciting
-            projects. Whether you have a internship idea in mind or just want to
+            I'm currently seeking new working opportunities to collaborate on exciting
+            projects. Whether you have a idea in mind or just want to
             say hi, feel free to <b>contact me!</b>
           </p>
         </div>
