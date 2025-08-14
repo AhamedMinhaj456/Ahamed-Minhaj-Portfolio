@@ -47,10 +47,10 @@ const SocialLink = () => {
   ];
 
   return (
-    // was: "lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed"
+    // was: "lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed"    
     <div className="fixed top-[35%] left-0 z-[9999]">
       {/* Mobile version (unchanged look, now also floating) */}
-      <ul className="lg:hidden bg-gray-800 p-4 overflow-y-auto rounded-r-md">
+      <ul className="lg:hidden bg-gray-800 p-4 overflow-y-auto rounded-r-md">  
         {links.map((link) => (
           <li
             key={link.id}
@@ -63,7 +63,7 @@ const SocialLink = () => {
               target="_blank"
               rel="noreferrer"
             >
-              {link.child}
+              {link.child}    
             </a>
           </li>
         ))}
