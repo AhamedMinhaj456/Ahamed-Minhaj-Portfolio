@@ -27,10 +27,10 @@ const NavBar = () => {
         >
           <h1
             className="text-2xl sm:text-3xl font-bold tracking-wide"
-            style={{ fontFamily: "'Homemade Apple', cursive" }}
+            style={{ fontFamily: "'Homemade Apple', cursive" }}  
           >
             Ahamed Minhaj
-          </h1>
+          </h1>  
         </Link>
 
         {/* Desktop menu */}
