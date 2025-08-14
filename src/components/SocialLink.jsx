@@ -47,12 +47,14 @@ const SocialLink = () => {
   ];
 
   return (
-    <div className="lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed">
-      <ul className="lg:hidden bg-gray-800 p-4 overflow-y-auto">
+    // was: "lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed"
+    <div className="fixed top-[35%] left-0 z-[9999]">
+      {/* Mobile version (unchanged look, now also floating) */}
+      <ul className="lg:hidden bg-gray-800 p-4 overflow-y-auto rounded-r-md">
         {links.map((link) => (
           <li
             key={link.id}
-            className={`flex justify-between items-center w-full h-14 px-4 mb-2 bg-gray-500 hover:bg-gray-600 rounded-md duration-300 ${link.style}`}
+            className={`flex justify-between items-center w-full h-14 px-4 mb-2 bg-gray-500 hover:bg-gray-600 rounded-md duration-300 ${link.style || ""}`}
           >
             <a
               href={link.href}
@@ -66,11 +68,13 @@ const SocialLink = () => {
           </li>
         ))}
       </ul>
+
+      {/* Desktop version (same slide-out gray rail) */}
       <ul className="hidden lg:flex lg:flex-col">
         {links.map((link) => (
           <li
             key={link.id}
-            className={`flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-gray-500 hover:ml-[-10px] hover:rounded-md duration-300 ${link.style}`}
+            className={`flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-gray-500 hover:ml-[-10px] hover:rounded-md duration-300 ${link.style || ""}`}
           >
             <a
               href={link.href}
