@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React from "react";
 import HeroImage from "../assets/dp.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
@@ -11,17 +11,6 @@ const Chip = ({ children }) => (
 );
 
 const Home = () => {
-  const [active, setActive] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActive(prev => !prev);
-    }, 600); 
-
-    return () => clearInterval(interval);
-  }, []);
-
-
   return (
     <div
       name="home"
@@ -35,19 +24,11 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 w-full">
           {/* Left: Text */}
           <div className="flex flex-col justify-center">
-            <p className="mb-3 inline-flex items-center gap-2 text-xs sm:text-sm text-green-100">
-      <span
-        className={`px-2 py-1 rounded-full ring-1 transition-all duration-300
-          ${
-            active
-              ? "bg-green-500 ring-green-400/30 scale-105"
-              : "bg-green-500/20 ring-green-400/30"
-          }
-        `}
-      >
-        🚀 Open to Work
-      </span>
-    </p>
+            {/* <p className="mb-3 inline-flex items-center gap-2 text-xs sm:text-sm text-white/80">
+              <span className="px-2 py-1 rounded-full bg-white/10 ring-1 ring-white/10">
+                🚀 Open to opportunities
+              </span>
+            </p> */}
 
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-fuchsia-300 to-indigo-300">
@@ -56,25 +37,18 @@ const Home = () => {
             </h1>
 
             <h2 className="mt-2 text-2xl sm:text-3xl font-semibold">
-              Associate Software Engineer{" "}
-              <span className="text-white/50">@</span> HighTechX
+              Associate Software Engineer <span className="text-white/50">@</span> HighTechX
             </h2>
 
             <h3 className="mt-1 text-base sm:text-lg text-gray-300">
-              BSc (Hons) in Computer Engineering — Faculty of Engineering,
-              University of Ruhuna
+              BSc (Hons) in Computer Engineering — Faculty of Engineering, University of Ruhuna
             </h3>
 
             <p className="text-gray-300 py-5 max-w-xl leading-relaxed">
-              A Computer Engineering graduate with 2 years of experience in
-              FullStack. Who building modern <strong>web apps</strong> with
-              <strong> React (TypeScript)</strong>, <strong>Spring Boot</strong>
-              , and <strong>MySQL</strong>. Experienced with{" "}
-              <strong>JasperReports</strong> (ported from Crystal Reports) and
-              migrating
-              <strong> T-SQL</strong> procedures to <strong>MySQL</strong>. I
-              love learning fast, crafting clean UIs, and shipping reliable
-              APIs.
+              A Computer Engineering graduate with 2 years of experience in FullStack. Who building modern <strong>web apps</strong> with
+              <strong> React (TypeScript)</strong>, <strong>Spring Boot</strong>, and <strong>MySQL</strong>.
+              Experienced with <strong>JasperReports</strong> (ported from Crystal Reports) and migrating
+              <strong> T-SQL</strong> procedures to <strong>MySQL</strong>. I love learning fast, crafting clean UIs, and shipping reliable APIs.
             </p>
 
             {/* Tech chips */}
@@ -102,7 +76,7 @@ const Home = () => {
 
               {/* Optional: update hrefs */}
               <a
-                href="/Ahamed_Minhaj.pdf"
+                href= "/Ahamed_Minhaj.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-lg ring-1 ring-white/15 bg-white/5 hover:bg-white/10 transition"
@@ -112,7 +86,7 @@ const Home = () => {
 
               <div className="flex items-center gap-3 ml-1">
                 <a
-                  href="https://github.com/ahamedminhaj456"
+                  href= "https://github.com/ahamedminhaj456" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition"
@@ -122,7 +96,7 @@ const Home = () => {
                   <FaGithub className="text-xl" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/ahamed-minhaj-24697a215/"
+                  href= "https://www.linkedin.com/in/ahamed-minhaj-24697a215/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-white/10 transition"

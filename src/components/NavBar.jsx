@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
@@ -13,6 +13,16 @@ const NavBar = () => {
     { id: 5, link: "Technologies" },
     { id: 6, link: "contact" }
   ];
+
+    const [active, setActive] = useState(false);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setActive((prev) => !prev);
+      }, 600);
+  
+      return () => clearInterval(interval);
+    }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/70 backdrop-blur-md border-b border-white/10">
@@ -31,7 +41,22 @@ const NavBar = () => {
           >
             Ahamed Minhaj
           </h1>  
+          
         </Link>
+
+              <p className="mb-3 inline-flex items-center gap-2 text-xs sm:text-sm text-green-100">
+      <span
+        className={`px-2 py-1 rounded-full ring-1 transition-all duration-300
+          ${
+            active
+              ? "bg-green-500 ring-green-400/30 scale-105"
+              : "bg-green-500/20 ring-green-400/30"
+          }
+        `}
+      >
+        🚀 Open to Work
+      </span>
+    </p>
 
         {/* Desktop menu */}
         <ul className="hidden md:flex">
