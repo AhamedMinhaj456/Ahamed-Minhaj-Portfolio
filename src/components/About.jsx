@@ -38,8 +38,8 @@ const About = () => {
         {/* Intro Card */}
         <Card>
           <p className="text-lg sm:text-xl leading-relaxed text-gray-100">
-            Final-year BSc (Hons) Computer Engineering undergraduate at the University of Ruhuna (OGPA 3.17) with
-            hands-on industry experience delivering full-stack ERP features as an Associate Software Engineer and former Intern at Hightechx.
+            A Computer Engineering graduate with 2 years of experience in application development in Java ecosystem,
+            worked as an Associate Software Engineer and former Intern at Hightechx.
             Skilled in <strong>React (TypeScript)</strong>, <strong>Spring Boot</strong>, and <strong>MySQL</strong>; experienced with
             <strong> JasperReports</strong> (ported from Crystal Reports) and migrating <strong>T-SQL</strong> procedures to <strong>MySQL</strong>.
             Enthusiastic, self-motivated, well-organized team player — quick to learn and proactive in fast-paced environments.
@@ -48,7 +48,7 @@ const About = () => {
 
           {/* Badges */}
           <div className="mt-4 flex flex-wrap gap-2">
-            <Badge>🎓 Final-year (OGPA 3.17)</Badge>
+            <Badge>🎓 OGPA - 3.17</Badge>
             <Badge>⚛️ React (TS)</Badge>
             <Badge>🌱 Spring Boot</Badge>
             <Badge>🗄️ MySQL</Badge>
@@ -119,7 +119,10 @@ const About = () => {
         <Card className="mt-8">
           <h3 className="text-2xl font-semibold">Interests & Goals</h3>
           <p className="mt-3 text-base sm:text-lg text-gray-100">
-            📱 Mobile-friendly web apps and hosting• 🤖 AI & ML features in production • 🔒 Secure, reliable systems • 🧪 Clean code and testing.
+            📱 Mobile-friendly web apps and hosting 
+            <br /> 🤖 AI & ML features in production 
+            <br /> 🔒 Secure, reliable systems 
+            <br /> 🧪 Clean code and testing.
             <br className="hidden sm:block" />
             <span className="block mt-2">
               🌟 Let’s connect — I’m excited to contribute to impactful products and collaborate with teams that value learning and craftsmanship.
