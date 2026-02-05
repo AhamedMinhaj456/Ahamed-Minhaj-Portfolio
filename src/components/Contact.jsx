@@ -2,22 +2,23 @@ import React from "react";
 
 const Contact = () => {
   return (
-   
     <div
       name="contact"
       className="w-full h-screen bg-gradient-to-b from-gray-800 to-white-100 via-black to-gray-800 p-4 text-white mt-20"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full w-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Contact
-          </p>
-          <p className="py-6">
-            I'm currently seeking new working opportunities to collaborate on exciting
-            projects. Whether you have a idea in mind or just want to
-            say hi, feel free to <b>contact me!</b>
+        <div className="pb-8 text-left">
+          <h2 className="text-5xl font-bold text-white mb-4">Contact</h2>
+          <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-6"></div>
+
+          <p className="text-gray-300 max-w-2xl">
+            I'm currently seeking new working opportunities to collaborate on
+            exciting projects. Whether you have an idea in mind or just want to
+            say hi, feel free to{" "}
+            <span className="font-semibold text-white">contact me!</span>
           </p>
         </div>
+
         <div className="flex justify-center items-center">
           <form
             action="https://getform.io/f/jbwxrkwa"

@@ -121,7 +121,7 @@ const Home = () => {
 
             {/* Floating chips */}
             <div className="hidden md:block absolute -left-6 top-8">
-              <Chip>🧠 Quick Learner</Chip>
+              <Chip>2+ Years Experience</Chip>
             </div>
             <div className="hidden md:block absolute right-0 -top-4">
               <Chip>🤝 Team Player</Chip>
