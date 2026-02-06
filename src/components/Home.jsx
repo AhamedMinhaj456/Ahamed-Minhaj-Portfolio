@@ -45,7 +45,7 @@ const Home = () => {
             </h3>
 
             <p className="text-gray-300 py-5 max-w-xl leading-relaxed">
-              A Computer Engineering graduate with 2 years of experience in FullStack. Who building modern <strong>web apps</strong> with
+              A Computer Engineering graduate with 2+ years of experience in FullStack. Who building modern <strong>web apps</strong> with
               <strong> React (TypeScript)</strong>, <strong>Spring Boot</strong>, and <strong>MySQL</strong>.
               Experienced with <strong>JasperReports</strong> (ported from Crystal Reports) and migrating
               <strong> T-SQL</strong> procedures to <strong>MySQL</strong>. I love learning fast, crafting clean UIs, and shipping reliable APIs.
@@ -121,7 +121,7 @@ const Home = () => {
 
             {/* Floating chips */}
             <div className="hidden md:block absolute -left-6 top-8">
-              <Chip>2+ Years Experience</Chip>
+              <Chip>💼 2+ Years Experience</Chip>
             </div>
             <div className="hidden md:block absolute right-0 -top-4">
               <Chip>🤝 Team Player</Chip>
