@@ -6,15 +6,15 @@ import medicalCost from "../assets/Projects/medicalCost.png";
 import flowerHeader from "../assets/Projects/flowerheader.jpg";
 import GUIgroup from "../assets/Projects/GUIgroup.png";
 import GUIindividual from "../assets/Projects/GUIindividual.png";
-import EmployeeDatabaseManagement from "../assets/Projects/loading.jpg";
-import SmartAutoPartsOrdering from "../assets/Projects/loading.jpg";
-import MotorbikeRentingSelling from "../assets/Projects/loading.jpg";
-import NYTSentimentAnalysis from "../assets/Projects/loading.jpg";
-import SecureChatApplication from "../assets/Projects/loading.jpg";
-import MarketHub from "../assets/Projects/loading.jpg";
+import EmployeeDatabaseManagement from "../assets/Projects/employee_database.png";
+import SmartAutoPartsOrdering from "../assets/Projects/smart_autoparts.png";
+import MotorbikeRentingSelling from "../assets/Projects/Motorbike.png";
+import NYTSentimentAnalysis from "../assets/Projects/sentiment.png";
+import SecureChatApplication from "../assets/Projects/secure_chat.png";
+import MarketHub from "../assets/Projects/cloud_native.png";
 import TrafficCongestionDetection from "../assets/Projects/Traffic_monitor.png";
-import CustomerSupportChatbot from "../assets/Projects/loading.jpg";
-import ERPWebApplication from "../assets/Projects/loading.jpg";
+import CustomerSupportChatbot from "../assets/Projects/rag.png";
+import ERPWebApplication from "../assets/Projects/ERP.png";
 import RuleBasedMovieRecommendation from "../assets/Projects/functional.png";
 import LookTrackVision from "../assets/Projects/looktrackvision.png";
 import GazeTrackingMobileApp from "../assets/Projects/lookTrackMobile.jpg";
@@ -55,7 +55,7 @@ const Projects = () => {
         "Developed a comprehensive web and mobile application for motorbike reservation system facilitating bookings across multiple shops. Features three user roles: admin, shop owner, and customer with real-time service updates.",
       tech: ["React.js", "Spring Boot", "MySQL", "Flutter", "Firebase"],
       code: "https://github.com/AhamedMinhaj456/Motorbike_Service_Station_Reservation_System.git",
-      demo: "",
+      demo: "https://bikepulse-customer.vercel.app/",
       category: "Full Stack"
     },
     {
@@ -234,7 +234,7 @@ const Projects = () => {
         "Angular"
       ],
       code: "https://github.com/AhamedMinhaj456/MarketHub-cloud-native-webstore-architecture",
-      demo: "https://book-fair-reservation-system-book-fair-reservation.nqmggx.easypanel.host/",
+      demo: "",
       category: "Cloud-Native"
     },
     {
