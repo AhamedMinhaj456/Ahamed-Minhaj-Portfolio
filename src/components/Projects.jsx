@@ -18,6 +18,7 @@ import ERPWebApplication from "../assets/Projects/loading.jpg";
 import RuleBasedMovieRecommendation from "../assets/Projects/functional.png";
 import LookTrackVision from "../assets/Projects/looktrackvision.png";
 import GazeTrackingMobileApp from "../assets/Projects/lookTrackMobile.jpg";
+import BookFairReservationSystem from "../assets/Projects/bookfair.jpg";
 
 import { FaGithub, FaRocket } from "react-icons/fa";
 
