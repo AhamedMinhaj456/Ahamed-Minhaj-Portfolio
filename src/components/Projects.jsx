@@ -198,6 +198,25 @@ const Projects = () => {
   const CloudProjects = [
     {
       id: 1,
+      src: BookFairReservationSystem,
+      title: "Book Fair Reservation System",
+      description:
+        "Designed and developed a web-based reservation system to manage book fair stall bookings and visitor registrations. Implemented reservation workflows, backend logic for availability management, and a structured, user-friendly interface, demonstrating practical full-stack web application development with database-driven design.",
+      tech: [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "REST APIs",
+        "Web Application Development",
+        "Database Design"
+      ],
+      code: "", // Add GitHub link if available
+      demo: "", // Add demo link if available
+      category: "Full Stack"
+    },
+
+    {
+      id: 2,
       src: MarketHub,
       title: "MarketHub – Cloud-Native Webstore Platform",
       description:
@@ -212,16 +231,23 @@ const Projects = () => {
         "Angular"
       ],
       code: "https://github.com/AhamedMinhaj456/MarketHub-cloud-native-webstore-architecture",
-      demo: "",
+      demo: "https://book-fair-reservation-system-book-fair-reservation.nqmggx.easypanel.host/",
       category: "Cloud-Native"
     },
     {
-      id: 2,
+      id: 3,
       src: MotorbikeRentingSelling,
       title: "Motorbike Renting & Selling Platform",
       description:
         "Designed and developed a full-stack web application to manage motorbike renting and selling operations. Implemented RESTful backend services and containerized the entire application using Docker and Docker Compose.",
-      tech: ["Java", "Spring Boot", "MySQL", "Docker", "Docker Compose", "REST APIs"],
+      tech: [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "Docker",
+        "Docker Compose",
+        "REST APIs"
+      ],
       code: "https://github.com/AhamedMinhaj456/Motorbike-Renting-And-Selling-with-Docker",
       demo: "",
       category: "DevOps"
@@ -235,7 +261,14 @@ const Projects = () => {
       title: "Rule-Based Movie Recommendation System",
       description:
         "Built an explainable, rule-based movie recommendation system using pure Functional Programming in Haskell. Implemented a deterministic recommendation engine with clear filtering, scoring, and ranking logic, exposed via a REST API and consumed by a React frontend.",
-      tech: ["Haskell", "Scotty", "Functional Programming", "REST APIs", "React.js", "TypeScript"],
+      tech: [
+        "Haskell",
+        "Scotty",
+        "Functional Programming",
+        "REST APIs",
+        "React.js",
+        "TypeScript"
+      ],
       code: "https://github.com/AhamedMinhaj456/Rule-Based-Movie-Recommendation-System-using-Haskell",
       demo: "",
       category: "Full Stack"
@@ -260,7 +293,12 @@ const Projects = () => {
       title: "Smart Auto Parts Ordering System",
       description:
         "Designed and developed a relational database for a smart auto parts ordering system using MySQL. Modeled core entities and relationships to support parts inventory, orders, and suppliers.",
-      tech: ["MySQL", "Database Design", "MySQL Workbench", "Relational Databases"],
+      tech: [
+        "MySQL",
+        "Database Design",
+        "MySQL Workbench",
+        "Relational Databases"
+      ],
       code: "https://github.com/AhamedMinhaj456/Smart-auto-parts-ordering-system",
       demo: "",
       category: "Database"
@@ -356,14 +394,16 @@ const Projects = () => {
 
             {/* Tech Stack - Compact - Show max 4, show all on expand */}
             <div className="flex flex-wrap gap-1.5 mb-3">
-              {(isExpanded ? project.tech : project.tech.slice(0, 4)).map((tech, idx) => (
-                <span
-                  key={idx}
-                  className="px-2 py-0.5 bg-gray-700/30 text-gray-400 text-xs rounded border border-gray-600/20 hover:border-cyan-500/40 hover:text-cyan-300 transition-colors"
-                >
-                  {tech}
-                </span>
-              ))}
+              {(isExpanded ? project.tech : project.tech.slice(0, 4)).map(
+                (tech, idx) => (
+                  <span
+                    key={idx}
+                    className="px-2 py-0.5 bg-gray-700/30 text-gray-400 text-xs rounded border border-gray-600/20 hover:border-cyan-500/40 hover:text-cyan-300 transition-colors"
+                  >
+                    {tech}
+                  </span>
+                )
+              )}
               {!isExpanded && project.tech.length > 4 && (
                 <span className="px-2 py-0.5 text-gray-500 text-xs font-medium">
                   +{project.tech.length - 4}
@@ -404,11 +444,15 @@ const Projects = () => {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-2">
           <span className="text-2xl">{icon}</span>
-          <h3 className={`text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${gradient}`}>
+          <h3
+            className={`text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${gradient}`}
+          >
             {title}
           </h3>
         </div>
-        <div className={`h-0.5 w-24 bg-gradient-to-r ${gradient} rounded-full`}></div>
+        <div
+          className={`h-0.5 w-24 bg-gradient-to-r ${gradient} rounded-full`}
+        ></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -444,14 +488,54 @@ const Projects = () => {
         </div>
 
         {/* Project Sections */}
-        <ProjectSection title="Web Development" icon="🌐" gradient="from-cyan-400 to-blue-500" projects={WebProjects} />
-        <ProjectSection title="Cloud" icon="☁️" gradient="from-blue-400 to-indigo-500" projects={CloudProjects} />
-        <ProjectSection title="AI & ML" icon="🤖" gradient="from-purple-400 to-pink-500" projects={MLProjects} />
-        <ProjectSection title="Mobile Application" icon="📱" gradient="from-green-400 to-cyan-500" projects={MobileProjects} />
-        <ProjectSection title="Database Management Systems" icon="🗄️" gradient="from-yellow-400 to-orange-500" projects={DatabaseProjects} />
-        <ProjectSection title="Functional Programming" icon="🧩" gradient="from-indigo-400 to-purple-500" projects={FunctionalProjects} />
-        <ProjectSection title="Computer Vision" icon="👁️" gradient="from-pink-400 to-red-500" projects={ComputerVisionProjects} />
-        <ProjectSection title="GUI Programming" icon="🖥️" gradient="from-orange-400 to-red-500" projects={GUIProjects} />
+        <ProjectSection
+          title="Web Development"
+          icon="🌐"
+          gradient="from-cyan-400 to-blue-500"
+          projects={WebProjects}
+        />
+        <ProjectSection
+          title="Cloud"
+          icon="☁️"
+          gradient="from-blue-400 to-indigo-500"
+          projects={CloudProjects}
+        />
+        <ProjectSection
+          title="AI & ML"
+          icon="🤖"
+          gradient="from-purple-400 to-pink-500"
+          projects={MLProjects}
+        />
+        <ProjectSection
+          title="Mobile Application"
+          icon="📱"
+          gradient="from-green-400 to-cyan-500"
+          projects={MobileProjects}
+        />
+        <ProjectSection
+          title="Database Management Systems"
+          icon="🗄️"
+          gradient="from-yellow-400 to-orange-500"
+          projects={DatabaseProjects}
+        />
+        <ProjectSection
+          title="Functional Programming"
+          icon="🧩"
+          gradient="from-indigo-400 to-purple-500"
+          projects={FunctionalProjects}
+        />
+        <ProjectSection
+          title="Computer Vision"
+          icon="👁️"
+          gradient="from-pink-400 to-red-500"
+          projects={ComputerVisionProjects}
+        />
+        <ProjectSection
+          title="GUI Programming"
+          icon="🖥️"
+          gradient="from-orange-400 to-red-500"
+          projects={GUIProjects}
+        />
       </div>
     </div>
   );
