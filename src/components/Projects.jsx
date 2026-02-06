@@ -208,12 +208,14 @@ const Projects = () => {
         "Spring Boot",
         "MySQL",
         "REST APIs",
+        "Cloud",
+        "Docker",
         "Web Application Development",
         "Database Design"
       ],
-      code: "", // Add GitHub link if available
-      demo: "", // Add demo link if available
-      category: "Full Stack"
+      code: "https://github.com/QuadraBytes/Book-Fair-Reservation-System", // Add GitHub link if available
+      demo: "https://book-fair-reservation-system-book-fair-reservation.nqmggx.easypanel.host/", // Add demo link if available
+      category: "Full Stack/Cloud"
     },
 
     {
