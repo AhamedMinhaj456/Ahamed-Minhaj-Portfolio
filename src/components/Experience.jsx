@@ -7,7 +7,7 @@ const Experience = () => {
       title: "Associate Software Engineer",
       company: "Hightechx Software Solutions (Pvt) Ltd",
       link: "http://hightechx.lk/",
-      period: "Jan 2025 – Present",
+      period: "Jan 2025 – Dec 2025",
       summary:
         "Promoted from intern and continued full-stack delivery for the company’s end-to-end ERP web application using React UIs and reusable components, implemented Spring Boot REST services, and designed MySQL schemas and queries for core workflows. Also handled reporting via Jasper Reports ported from Crystal Reports, integrated in Spring Boot with React parameter screens, and migrated report procedures from SQL Server to MySQL.",
       badges: ["React (TS)", "Spring Boot", "MySQL", "JasperReports", "Agile/Jira", "Crystal report", "MSSQL"],
